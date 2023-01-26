@@ -118,6 +118,8 @@ nav{
     color: rgb(235, 12, 23);
 }
 .body-text{
+    vertical-align: top;
+    display: inline-block;
     font-size: 16px;
     width: 36%;
     margin-left: 50%;
@@ -178,7 +180,7 @@ header {
     float: left;
     width: 200px;
     padding: 20px;
-    margin: 20px;
+    margin: 2px;
     
 }
 .gallery:hover {
@@ -256,3 +258,12 @@ th, td {
     text-align: center;
     left: 0;
   }
+.ilovemumbai{
+    display: inline-block;
+    /* float: left; */
+    height: 1000;
+    width: 200px;
+    padding: 20px;
+    margin: 2px;
+  }
+  

@@ -216,6 +216,7 @@ header {
     width: 180px;
     padding: 20px;
     margin: 20px;
+    text-align: center;
     
 }
 
@@ -223,7 +224,7 @@ header {
     width: 150px;
     height: 150px;
 }
-.gallery .description {
+.gallery.description {
     padding: 10px;
     text-align: center;
     color: black;

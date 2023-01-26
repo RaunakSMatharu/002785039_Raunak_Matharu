@@ -40,3 +40,4 @@ The <p> tag defines a paragraph. Browsers automatically add a single blank line 
 13. Heading tags
 HTML defines six levels of headings. A heading element implies all the font changes, paragraph breaks before and after, and any white space necessary to render the heading.
 The heading elements are H1, H2, H3, H4, H5, and H6 with H1 being the highest (or most important) level and H6 the least.
+
