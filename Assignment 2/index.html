@@ -1,88 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav id = "navbar">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href ="#Certificates">Certificates</a>
-        
-    </nav>
+<html>
+  <head>
+    <title>Raunak Resmue-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bb5d299c7e.js" crossorigin="anonymous"></script>
+  </head>
 
-    <header id = "about">
+  <body>
+    <div class="wrapper">
+      <header class="myname">
+        <h1>Raunak Singh Matharu</h1>
+      </header>
 
+      <nav class="nav-bar">
+        <div class="photo">
+            <img src="images/46082.JPG" alt="My Photo">
+            <p class="description">Graduate Student in Information Systems at Northeastern University </p>
+        </div>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#certification">CERTIFICATION</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
 
-            <div id= "title">
-                <img src= "images.jpg" alt ="dp">
-            </div>
-            <h1> <span style ="color: rgb(238, 240, 243); text-decoration:dotted;">Raunak Singh Matharu</span></h1>
-            <p>Graduate Student at Northeastern University in Information System| Python | Java | Analytics | Data Engineer | Data Science | SQL </p>
-            <p>
-                I am currently pursuing my master's in Information Systems from Northeastern University Boston. I'm quite interested in using data visualization and data mining tools to address challenges in the real world. I am an analytical thinker with the capacity to improvise company strategies by putting the data's interpretation into practice. I am able to ask the proper questions to get the greatest answers from the team and support them in achieving their future goals through clear communication of ideas.
+      <main>
+        <section class="home" id="home">
+            <br>
+            <h1> Python | Java | Analytics | Data Engineer | Data Science | SQL</h1>
+            <p> I am currently pursuing my master's in Information Systems from Northeastern University Boston. I'm quite interested in using data visualization and data mining tools to address challenges in the real world. I am an analytical thinker with the capacity to improvise company strategies by putting the data's interpretation into practice. I am able to ask the proper questions to get the greatest answers from the team and support them in achieving their future goals through clear communication of ideas.
             </p>
-       
-            
-    </header>
-
-    <section id ="projects">
-        <h2><em> Projects</em></h2>
-
-        
            
-
-
-        </div>
+    
+        <!-- skills section  -->
+    
+        <section class="skills" id="skills">
+    
+            <h1 class="heading">SKILLS</h1>
+    
+            <div class="skillss">
+                <div class="progress">
+                    <h3>Java <span>80%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>Python <span>90%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>HTML <span>70%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>CSS <span>60%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3> JavaScript <span>68%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3> Bootstrap <span>70%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+               
+            </div>
+    
+        </section>
+    
+        <!-- certification section  -->
+        <section class="certification" id="certification">
+    
+            <h1 class="heading">CERTIFICATIONS</h1>
+            
+            <div class="box-container"> 
+                <
+                <div class="box">
+                    <a target="_blank" href="images/python data analysis .png">
+                        <img src="images/python data analysis .png"alt="image" width="200" height="130">
+                    </a>
+                    <figcaption>Certificate: Python Data analysis</figcaption>
+                </div>
+    
+                <div class="box">
+                    <a target="_blank" href="images/python data representaion.png">
+                        <img src="images/python data representaion.png" alt="image" width="200" height="130">
+                    </a>
+                    <figcaption>Certificate: Python Data Representaion</figcaption>
+                </div>
+    
+                <div class="box">
+                    <a target="_blank" href="images/python data visualisation.png">
+                        <img src="images/python data visualisation.png"alt="image" width="200" height="130">
+                    </a>
+                    <figcaption>Certificate: Python Data visualisation</figcaption>
+                </div>
+    
+                <div class="box">
+                    <a target="_blank" href="images/Screenshot (84).png">
+                        <img src="images/Screenshot (84).png" alt="image" width="280" height="130">
+                    </a>
+                    <figcaption>Certificate:Basics of Python</figcaption>
+                </div>
+    
+            </div>
+    
+        </section>
+        <h1 class="heading">Projects</h1>
+        <section id ="projects">
+            
+    
+            <div class="projects-container">
+    
+                <a href= "https://github.com/RaunakSMatharu/Aed_Final_Project" target="_blank"
+                class="project">
+                    <img src="images/pharmacy_image.jpg" alt="Random Project">
+                    <p><i>Medicine chain supply</i></p>
+                </a>
+    
+                <a href= "https://github.com" class="project" target="_blank">
+                    <img src="images/people-eating-healthy-meals-wooden-table-top-view-food-delivery-people-eating-healthy-meals-wooden-table-food-delivery-160387494.jpg" alt="Random Project">
+                    <p><i>Food Delivery Management System</i> </p>
+                </a>
+ 
+            </div>
+            <section class="contact" id="contact">
+    
+                <h1 class="heading">CONTACT ME</h1>
         
-    </section>
-
-    <section id ="Certificates">
-
-        <h2><i>Certificate</i>s</h2>
-
+                <div class="row">
         
+                    <section id = "social">
+                    
+                        <ul class ="links">
+                
+                            <li><a href = "https://twitter.com" target="_blank" > <i class="fab fa-twitter"></i></a></li>
+                
+                            <li><a href = "https://www.youtube.com/" target="_blank"> <i class="fab fa-youtube"></i></a></li>
+                
+                            <li><a href = "https://www.linkedin.com/in/raunak-singh-matharu-22891b204//" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
+                
+                            <li><a href = "https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"></i></a></li>
+                
+                            <li><a href = "https://www.facebook.com/" target= "_blank"> <i class="fab fa-facebook"></i></a></li>
+                
+                            <li><a href = "https://github.com/RaunakSMatharu" target= "_blank"> <i class="fab fa-github"></i></a></li>
+                
+                            <li><a href = "tel:857-891-4811" target= "_blank"> <i class="fas fa-phone"></i></a></li>
+                
+                            <li><a href = "mailto:matharu.r@northeastern.edu" target= "_blank"> <i class="fas fa-envelope"></i></a></li>
+            </div>
+    
+            </div>
+    
+        </section>
+           
+            
+        </section>
+    
+        <!-- education section  -->
+    
+        <!-- <section class="education" id="education">
+    
+            <h1 class="heading">EDUCATION</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="year">2022 - 2024</div>
+                    <h3>Northeastern University</h3>
+                    <h4>Master of Science in Information Systems</h4>
+                    <p>Related Courses: Application Engineering Development,Data Management and Database Design ,Web Design and User Experience Engineering, Data Science with Python</p>
+                </div>
+    
+                <div class="box">
+                    <div class="year">2018 - 2022</div>
+                    <h3>Thakur College of Engineering and Technology </h3>
+                    <h4> Bachelor of Engineering in Electronics and Telecommunication Engineering</h4>
+                    <p>Relevant Courses: Database Management Systems, Bigdata Analysis, Cloud Computing, Data Structures</p>
+                </div> -->
+    
+              </div>
+
+            </section>  
+            </div> 
             
 
-
-        </div>
         
-    </section>
+    
 
-    <section id = "social">
-        <h2><i>Social Media</i></h2>
-        <p> <i>Find me on!</i></p>
-        <ul class ="links">
-
-            <li><a href = "https://twitter.com" target="_blank" > <i class="fab fa-twitter"></i></a></li>
-
-            <li><a href = "https://www.youtube.com/" target="_blank"> <i class="fab fa-youtube"></i></a></li>
-
-            <li><a href = "https://www.linkedin.com/in/raunak-singh-matharu-22891b204//" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
-
-            <li><a href = "https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"></i></a></li>
-
-            <li><a href = "https://www.facebook.com/" target= "_blank"> <i class="fab fa-facebook"></i></a></li>
-
-            <li><a href = "https://github.com/RaunakSMatharu" target= "_blank"> <i class="fab fa-github"></i></a></li>
-
-            <li><a href = "tel:857-891-4811" target= "_blank"> <i class="fas fa-phone"></i></a></li>
-
-            <li><a href = "mailto:matharu.r@northeastern.edu" target= "_blank"> <i class="fas fa-envelope"></i></a></li>
-      
-        
-    </section>
-
-    <footer>
-        <div id= "center">
-                
-                <p>
-                   <i class="fas fa-code"></i> Raunak Singh Matharu</p>
-        </div>
-       
-    </footer>
-</body>
+        <footer>
+            <i><small>Raunak Singh Matharu <br>Any concerns, mail me at: <a style = "text-decoration: none; color: white;"href="mailto:matharu.r@northeastern.edu">matharu.r@northeastern.edu</a>
+        </footer>
+    </div>
+  </body>
 </html>
