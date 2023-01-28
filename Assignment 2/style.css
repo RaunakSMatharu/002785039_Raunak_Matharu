@@ -14,6 +14,7 @@ body{
 .myname{
     text-align: center;
     background-color: #31C4C3;
+   max-height: 50px;
 }
 header h1{
     padding: 10px;
@@ -460,25 +461,46 @@ header p {
         margin-bottom: 0px;
         margin-top: 90px;
     } */
-    @media only screen and (max-width: 370) {
+
+    @media only screen and (min-width:365px) and (max-width: 840px) {
         #title img{
             width: 95px;
             height: 90px;
             margin-bottom: 0px;
             margin-top: 90px;
         }
-        
+        header{
+            
+            background-size: cover;
+            background-position: center center;
+            color: rgb(6, 6, 6); 
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+            height: 100vh;
+            position: relative;
+            }
+        .myname{
+            max-height: 50px;
+        }
+        #social{
+            display: block;
+        }
+    }
     
     @media(max-width: 440px){
     
-        section{                padding: 20px;
+        section{  
+                          padding: 20px;
             }
     }
         
     @media only screen and (max-device-width: 480px) 
     {   
         header{
-        background-image: url( images/code.jpg);
+        
         background-size: cover;
         background-position: center center;
         color: rgb(6, 6, 6); 
