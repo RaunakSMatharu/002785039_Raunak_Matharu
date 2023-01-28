@@ -469,25 +469,25 @@ header p {
         }
         
     
-        @media(max-width: 440px){
+    @media(max-width: 440px){
     
-            section{
-                padding: 20px;
+        section{                padding: 20px;
             }
-        }
+    }
         
-        @media only screen and (max-device-width: 480px) {
+    @media only screen and (max-device-width: 480px) 
+    {   
         header{
-            background-image: url( images/code.jpg);
-            background-size: cover;
-            background-position: center center;
-            color: rgb(6, 6, 6); 
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column; 
-            height: 100vh;
-            position: relative;
+        background-image: url( images/code.jpg);
+        background-size: cover;
+        background-position: center center;
+        color: rgb(6, 6, 6); 
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        height: 100vh;
+        position: relative;
         }
-}
+    }
