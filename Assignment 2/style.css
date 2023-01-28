@@ -70,7 +70,7 @@ main{
     padding: 10px;
     background-color: #ffffff;
 }
-.home{
+.about{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,11 +78,11 @@ main{
     padding-bottom: 10rem;
     background-color: #31C4C3;
 }
-.home h1{
+.about h1{
     color: #065D70;
     font-family: Arial, Helvetica, sans-serif;
 }
-.home P{
+.about P{
     padding: 1rem,1rem,3rem,1rem;
     margin-left: 9%;
     margin-right: 9%;
@@ -92,7 +92,7 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
 }
-.home .post{
+.about .post{
     padding: 1rem 0;
     justify-content : center;
     color: #4D4D4D;
@@ -105,12 +105,12 @@ main{
     padding: 1rem 2rem;
 }
 
-.home .post a{
+.about .post a{
     text-decoration: none;
     color: #4D4D4D;
 }
 
-.home .share{
+.about .share{
     position: relative;
     transform: translateX(-50%);
     display: flex;
@@ -237,11 +237,11 @@ main{
     text-align: center;
     width:21rem;
     height: 12rem;
-   
+    transition:  0.3s ease;
     
 }
 .certification .box-container #box:hover{
-    transition: transform 0.3s ease;
+    transform:scale(1.2) ;
 }
 
 
@@ -478,7 +478,7 @@ header p {
         
         @media only screen and (max-device-width: 480px) {
         header{
-            background-image: url( images/pexels-pixabay-265631.jpg);
+            background-image: url( images/code.jpg);
             background-size: cover;
             background-position: center center;
             color: rgb(6, 6, 6); 
