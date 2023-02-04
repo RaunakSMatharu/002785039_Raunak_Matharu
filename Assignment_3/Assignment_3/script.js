@@ -1,4 +1,4 @@
-
+//Title constructor function that creates a Title object
 function Title(t1) 
 { 
   this.mytitle = t1;
@@ -20,7 +20,7 @@ var t = new Title("CONNECT WITH ME!");
 
 const table = document.getElementById("myTable");
 
-let countBoxPresent = 0;
+let countBox = 0;
 
 const checkRows = table.getElementsByTagName("input");
 OnStarthide();
@@ -137,7 +137,7 @@ window.addEventListener("click", () => {
 
   let submitBtn = document.getElementById("button");
 
-  if (countBoxPresent > 0) {    
+  if (countBox > 0) {    
     submitBtn.style.backgroundColor = "orange";
     submitBtn.style.border = "2px solid orange";
     submitBtn.style.cursor = "pointer";
@@ -177,10 +177,9 @@ function selectRow() {
   for (let i=0; i<checkRows.length; i++) {
       const row = checkRows[i].parentNode.parentNode;
       rowname=checkRows;
-      
       checkRows[i].addEventListener("click", () => {
         if (checkRows[i].checked) {
-          countBoxPresent++;
+          countBox++;
           row.style.backgroundColor = "yellow";
           row.lastElementChild.innerHTML = "<td><button onClick='editRow(this)'>Edit Row</button></td>";
           row.lastElementChild.previousElementSibling.innerHTML = "<td><button onClick='deleteRow(this)'>Delete Row</button></td>";
@@ -189,7 +188,7 @@ function selectRow() {
           row.querySelectorAll("td")[8].classList.remove("columnHide");
           row.querySelectorAll("td")[9].classList.remove("columnHide");
         } else {
-          countBoxPresent--;
+          countBox--;
           row.style.backgroundColor = "white";
           row.lastElementChild.innerHTML = "";
           row.lastElementChild.previousElementSibling.innerHTML = "";
