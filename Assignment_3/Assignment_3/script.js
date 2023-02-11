@@ -74,7 +74,7 @@ function rowTwo(r) {
   const row = r.parentNode.parentNode;
   const descRow = row.nextSibling.nextSibling; 
   if (boolean) {
-    descRow.style.display = "table-cell";
+    descRow.style.display = "revert";
     boolean = false;
   } else {          
     descRow.style.display = "none";

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Feedback</title>
+	<style>
+		label {
+			float: left;
+			width: 150px;
+		}
+
+		#container {
+			width: 700px;
+			margin: auto;
+			background-color: beige;
+		}
+
+		main {
+			padding: 50px;
+		}
+
+		.Validation {
+
+			color: red;
+			display: inline;
+			margin-left: 35px;
+			display: none;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container" >
+
+		<main>
+			<h2>Feeback</h2>
+			<h3>Love something? Hate something? Let us know!</h3>
+			Note : Fields marked with an asterisk(*) are mandatory
+			<br><br>
+			<!-- <form method="post" onsubmit="return true" novalidate> -->
+			<form novalidate id="form"></form>
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" required="required" />Miss
+			<input type="radio" name="title" id="mr" value="mr" required="required" />Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" required="required" />Mrs.
+			<p Class="Validation" id="valtitle">Select Title</p>
+			<br><br>
+
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" />
+			<p Class="Validation" id="valfirstName">Select First Name</p>
+			<br><br>
+
+			<label for="" class="aaa" id="dd"></label>
+			<div class="ddd"></div>
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+			<p Class="Validation" id="vallastName">Select Last Name</p>
+			<br><br>
+
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" />
+			<p Class="Validation" id="valValidemailID">Enter Valid EmailID</p>
+			<p Class="Validation" id="valemailId">Select Email ID</p>
+			<br><br>
+
+
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" />
+			<p Class="Validation" id="valphoneNumber">Select Phone Number</p>
+			<p Class="Validation" id="valValidphoneNumber">Enter Valid Phone Number</p>
+			<br><br>
+
+			<label for="streetAddress1">Street Address 1*:</label>
+			<input type="text" name="streetAddress1" id="streetAddress1" placeholder="address" />
+			<p Class="Validation" id="valstreetAddress1">Select Street Address 1</p>
+			<br><br>
+
+			<label for="streetAddress2">Street Address 2:</label>
+			<input type="text" name="streetAddress2" id="streetAddress2" placeholder="address" />
+			<p Class="Validation" id="valstreetAddress2">Select Street Address 2</p>
+			<br><br>
+
+			<label for="city">City*:</label>
+			<input type="text" name="city" id="city" placeholder="city" />
+			<p Class="Validation" id="valcity">Select City</p>
+			<br><br>
+
+			<label for="state">State*:</label>
+			<input type="text" name="state" id="state" placeholder="state" />
+			<p Class="Validation" id="valstate">Select State</p>
+			<br><br>
+
+			<label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" />
+			<p Class="Validation" id="valzipcode">Select zipcode</p>
+			<p Class="Validation" id="valValizipcode">Enter Valid zip Code</p>
+			<br><br>
+
+			<label for="HowDidYouHear">How did you hear*:</label>
+			<input type='checkbox' name="source" value="facebook" onclick="selectedCkhs(this)" /> Facebook
+			<input type='checkbox' name="source" value="google" onclick="selectedCkhs(this)" /> Google
+			<input type='checkbox' name="source" value="yelp" onclick="selectedCkhs(this)" /> Yelp
+			<p Class="Validation" id="valsource">Please select field</p>
+			<br><br>
+
+			<label for="drinks">Drinks*:</label>
+			<select name="drinks" id="selc_drinks">
+				<option value="default">---</option>
+				<option value="Coffee">Coffee</option>
+				<option value="Tea">Tea</option>
+				<option value="Juice">Juice</option>
+				<option value="SoftDrink">SoftDrink</option>
+				<option value="Latte">Latte</option>
+				<option value="Red Bull">Red Bull</option>
+				<option value="Cappachino">Cappachino</option>
+				<option value="Mocha">Mocha</option>
+			</select>
+			<p Class="Validation" id="valdrinks">Please select field</p>
+			<br><br>
+
+			<label for="comments">Comments*:</label>
+			<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25"></textarea>
+			<p Class="Validation" id="valtext">Enter comments</p>
+			<br><br>
+			<input id="submitBtn" type="Submit" onclick="validate()">
+			<input id='resetButton' type="Reset" onclick="window.location.reload();">
+			<br><br>
+			</form>
+		</main>
+	</div>
+	<div id="div_myTable" style="margin: 20px;display: none;">
+		<table id="myTable" style="width:100%;">
+			<tr>
+				<th>Title</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email ID</th>
+				<th>Phone Number</th>
+				<th>Street Address1</th>
+				<th>Street Address2</th>
+				<th>City</th>
+				<th>State</th>
+				<th>ZipCode</th>
+				<th>How Did You hear</th>
+				<th>Drinks</th>
+				<th>Additional comments</th>
+				<th>Comment</th>
+			</tr>
+		</table>
+	</div>
+
+	<script src="script.js"></script>
+
+		
+
+</body>
+
+</html>
