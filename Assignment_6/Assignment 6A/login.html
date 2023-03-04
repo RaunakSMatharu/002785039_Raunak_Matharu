@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <h1 style ="text-align: center;">Welcome !! Please Log In </h1>
+    <div class="container">
+        <div class="col-md-5 col-md-offset-3" style="margin: 10% 45% 15% 45%;">
+            <form name="loginForm"  onsubmit="Validateuser()">
+                <div class="form-group">
+                  <div style = "margin-bottom: 10px;">
+                  <span>Username  :</span>
+                 </div>  
+                  <input
+                      type="text"
+                      name=""
+                      id="name"
+                      class="form-control"
+                      placeholder="username"
+                    />
+                    <p class="nameErr"></p>
+                  </div>
+                  <div class="form-group">
+                    <div style = "margin-bottom: 10px;">
+                      <span>Email  :</span>
+                     </div>
+                    <input
+                      type="text"
+                      name=""
+                      id="email"
+                      class="form-control"
+                      placeholder="email"
+                    />
+                    <p class="emailErr"></p>
+                  </div>
+                  <div class="form-group">
+                    <div style = "margin-bottom: 10px;">
+                      <span>Password  :</span>
+                     </div>
+                    <input
+                      type="password"
+                      name=""
+                      id="password"
+                      class="form-control"
+                      placeholder="password"
+                    />
+                    <p class="passwordErr"></p>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      name=""
+                      class="btn btn-success"
+                      value="login"
+                    />
+                  </div>
+            </form>
+        </div>   
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://github.com/js-cookie/js-cookie/releases/download/v3.0.1/js.cookie.min.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function () {
+        $("form").submit((e) => false);
+      });
+
+      function Validateuser(){
+        var Pattern = /([\w\.]+)@(northeastern+)\.(edu)/;
+        var name = $("#name").val();
+        var pass = $("#password").val();
+        var email = $("#email").val();
+        var isUserValid = false;
+        var isEmailVald = false;
+        var isPasswordValid = false;
+        // Name Validation 
+          if(name == ""){
+            $(".nameErr").html(
+              "Enter username" +
+                " " +
+                '<i class="fa fa-times" aria-hidden="true"></i>'
+            )
+          } else if( name.length <  5){
+            $(".nameErr").html(
+            "UserName  shuould be of 5 characters " +
+                " " +
+                '<i class="fa fa-times" aria-hidden="true"></i>'
+          )}
+          else if (name) {
+            $(".nameErr").html("");
+            isUserValid  = true;
+            console.log(isUserValid);
+          }
+          // Email Validations 
+          if (email == "") {
+          $(".emailErr").html(
+            "Enter email" +
+              " " +
+              '<i class="fa fa-times" aria-hidden="true"></i>'
+          );
+        } else if (!Pattern.test(email)) {
+          $(".emailErr").html(
+            "Enter valid email" +
+              " " +
+              '<i class="fa fa-times" aria-hidden="true"></i>'
+          );
+        } else if (email) {
+          $(".emailErr").html("");
+          isEmailVald = true;
+          console.log(isEmailVald);
+        }
+        // Passowrd Validation 
+          if(pass == ""){
+            $(".passwordErr").html(
+              "Enter Password" +
+                " " +
+                '<i class="fa fa-times" aria-hidden="true"></i>'
+            )
+          } else if(pass.length< 6){
+            $(".passwordErr").html(
+            "Password shuould be of 6 characters " +
+                " " +
+                '<i class="fa fa-times" aria-hidden="true"></i>'
+          )}
+          else if (pass) {
+            $(".passwordErr").html("");
+            isPasswordValid  = true;
+            
+          }
+          console.log(name.length)
+          console.log({isUserValid,isEmailVald,isPasswordValid})
+          
+          if (isUserValid && isEmailVald && isPasswordValid) {
+          document.location.href = "./calculator.html?username=" + name;
+        }
+      }
+    </script>
+</body>
+</html>
